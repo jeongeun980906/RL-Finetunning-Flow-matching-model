@@ -1,4 +1,4 @@
-# RL Finetunning Flow matching model
+# RL Finetunning for Flow matching model
 
 ## 1. Train original flow matching model and classifer
 [flow_matching.ipynb](flow_matching.ipynb)
