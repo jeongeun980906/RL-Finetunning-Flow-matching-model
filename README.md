@@ -1,4 +1,7 @@
 # RL Finetunning for Flow matching model
+This repository contains the tutorial for finetunning flow matching model with reinforcement learning (PPO). 
+
+The formulation is from [DDPO](https://github.com/jeongeun980906/RL-Finetunning-Flow-matching-model) paper. 
 
 ## 1. Train original flow matching model and classifer
 [flow_matching.ipynb](flow_matching.ipynb)
