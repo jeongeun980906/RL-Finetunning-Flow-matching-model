@@ -6,6 +6,18 @@
 ![original_policy](./assets/ori.png)  
 
 
+### Acknowledgements
+
+This file includes a portion of code derived from:
+
+Author(s): Facebook Research
+Copyright: Facebook Research
+License: CC BY-NC
+Source Code: https://github.com/facebookresearch/flow_matching/blob/main/examples/standalone_flow_matching.ipynb
+Modification Date: 2025-02-05
+Description: Code file is extracted.
+
+
 ## 2. Finetune your model with un-learning reward.
 The code is in [rl_cls.ipynb](rl_cls.ipynb). 
 
