@@ -1,9 +1,9 @@
-# RL Finetunning for Flow matching model
-This repository contains the tutorial for finetunning flow matching model with reinforcement learning (PPO). 
+# RL Finetuning for Flow matching model
+This repository contains the tutorial for fine-tuning flow matching model with reinforcement learning (PPO). 
 
 The formulation is from [DDPO](https://rl-diffusion.github.io/) paper. 
 
-## 1. Train original flow matching model and classifer
+## 1. Train the original flow matching model and classifier
 [flow_matching.ipynb](flow_matching.ipynb)
 
 ![original_policy](./assets/ori.png)  
@@ -18,15 +18,15 @@ This file includes a portion of code derived from:
 - License: CC BY-NC 4.0
 - Source Code: https://github.com/facebookresearch/flow_matching/blob/main/examples/standalone_flow_matching.ipynb
 - Modification Date: 2025-02-05
-- Description: Code file is extracted.
+- Description: The Code file is extracted.
 
 
-## 2. Finetune your model with un-learning reward.
+## 2. Fine-tune your model with unlearning reward.
 The code is in [rl_cls.ipynb](rl_cls.ipynb). 
 
 In this code, we aim to un learn the down half of the moon. 
 
-Reward function is a logit of the upper moon by trained classifier. 
+The reward function is a logit of the upper moon by the trained classifier. 
 <span style="color:blue">*Blue* </span> has lower reward while <span style="color:red">*red* </span> has higher reward. 
 
 ![Reward](./assets/before.png)
@@ -38,12 +38,12 @@ def get_reward(x):
     return reward.cpu().detach().numpy()
 ```
 
-### Finetunning Results
+### Finetuning Results
 
 ![Final](./assets/result.png)
 
 
-## 3. Finetune your model with fidelity reward.
+## 3. Fine-tune your model with fidelity reward.
 The code is in [rl_fid.ipynb](rl_fid.ipynb).
 
 In this code, we aim to sharpen the moon shape. 
@@ -70,6 +70,6 @@ def get_reward(x):
     return reward
 ```
 
-### Finetunning Results
+### Finetuning Results
 
 ![Final](./assets/fid_after.png)
